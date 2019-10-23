@@ -1,0 +1,24 @@
+/**
+ * @file Sakura_modules.cpp
+ * @brief S_Fets クラスメンバの実装
+ */
+
+
+#include "Sakura_modules.h"
+
+S_Fets::S_Fets(HardwareSerial *_comm, char _id, Fets::portNum outputPort, Fets::portNum inputPort) : Fets(_id, outputPort, inputPort){
+    comm = _comm;
+}
+
+void S_Fets::begin(int baudrate){
+    comm -> begin(baudrate);
+}
+
+void S_Fets::send(char data){
+    comm->write(data);
+    return;
+}
+
+int S_Fets::recieve(){
+    return comm->read();
+}

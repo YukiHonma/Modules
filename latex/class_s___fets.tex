@@ -1,0 +1,159 @@
+\hypertarget{class_s___fets}{}\doxysection{S\+\_\+\+Fets Class Reference}
+\label{class_s___fets}\index{S\_Fets@{S\_Fets}}
+
+
+F\+E\+Tモジュール操作機能の G\+R-\/\+S\+A\+K\+U\+RA 実装用クラス  
+
+
+
+
+{\ttfamily \#include $<$Sakura\+\_\+modules.\+h$>$}
+
+Inheritance diagram for S\+\_\+\+Fets\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_s___fets}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_s___fets_a8ab5a4c7c3ea639389e288f672ba5512}{S\+\_\+\+Fets}} (Hardware\+Serial $\ast$\+\_\+comm, char \+\_\+id=\mbox{\hyperlink{_fets_8h_a578f83fb9043e88ec4c5f57e2068b841}{D\+E\+F\+\_\+\+ID}}, \mbox{\hyperlink{class_fets_a99be0aa99c00ad4ffefae76231ef2f51}{Fets\+::port\+Num}} output\+Port=\mbox{\hyperlink{class_fets_a99be0aa99c00ad4ffefae76231ef2f51abd22d22e92dbbad0eb565d921b19adc1}{Fets\+::\+None}}, \mbox{\hyperlink{class_fets_a99be0aa99c00ad4ffefae76231ef2f51}{Fets\+::port\+Num}} input\+Port=\mbox{\hyperlink{class_fets_a99be0aa99c00ad4ffefae76231ef2f51abd22d22e92dbbad0eb565d921b19adc1}{Fets\+::\+None}})
+\item 
+void \mbox{\hyperlink{class_s___fets_a49f3c6af321bc95ee70c4fc115cbc3d0}{begin}} (int baudrate=115200)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_s___fets_a70035fecb2d8c2f0640f750836388f24}{send}} (char data)
+\item 
+int \mbox{\hyperlink{class_s___fets_aee4f8650e3c7c0d9c76453d98114cf86}{recieve}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+F\+E\+Tモジュール操作機能の G\+R-\/\+S\+A\+K\+U\+RA 実装用クラス 
+
+\mbox{\hyperlink{class_fets}{Fets}} クラスを継承した拡張クラス ~\newline
+\mbox{\hyperlink{class_fets}{Fets}} クラスのパブリックメンバをそのまま呼び出せる
+
+\begin{DoxyNote}{Note}
+G\+R-\/\+S\+A\+K\+U\+RA のシリアル通信 Hardware\+Serial を使用して \mbox{\hyperlink{class_s___fets_a70035fecb2d8c2f0640f750836388f24}{send()}} , \mbox{\hyperlink{class_s___fets_aee4f8650e3c7c0d9c76453d98114cf86}{recieve()}} メソッドをオーバーライドしている 
+\end{DoxyNote}
+
+
+Definition at line 26 of file Sakura\+\_\+modules.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_s___fets_a8ab5a4c7c3ea639389e288f672ba5512}\label{class_s___fets_a8ab5a4c7c3ea639389e288f672ba5512}} 
+\index{S\_Fets@{S\_Fets}!S\_Fets@{S\_Fets}}
+\index{S\_Fets@{S\_Fets}!S\_Fets@{S\_Fets}}
+\doxysubsubsection{\texorpdfstring{S\_Fets()}{S\_Fets()}}
+{\footnotesize\ttfamily S\+\_\+\+Fets\+::\+S\+\_\+\+Fets (\begin{DoxyParamCaption}\item[{Hardware\+Serial $\ast$}]{\+\_\+comm,  }\item[{char}]{\+\_\+id = {\ttfamily \mbox{\hyperlink{_fets_8h_a578f83fb9043e88ec4c5f57e2068b841}{D\+E\+F\+\_\+\+ID}}},  }\item[{\mbox{\hyperlink{class_fets_a99be0aa99c00ad4ffefae76231ef2f51}{Fets\+::port\+Num}}}]{output\+Port = {\ttfamily \mbox{\hyperlink{class_fets_a99be0aa99c00ad4ffefae76231ef2f51abd22d22e92dbbad0eb565d921b19adc1}{Fets\+::\+None}}},  }\item[{\mbox{\hyperlink{class_fets_a99be0aa99c00ad4ffefae76231ef2f51}{Fets\+::port\+Num}}}]{input\+Port = {\ttfamily \mbox{\hyperlink{class_fets_a99be0aa99c00ad4ffefae76231ef2f51abd22d22e92dbbad0eb565d921b19adc1}{Fets\+::\+None}}} }\end{DoxyParamCaption})}
+
+コンストラクタ
+
+引数はシリアル通信のポインタと基底クラスのコンストラクタ \mbox{\hyperlink{class_fets_a912a4c4893341ede92aeeafb7085e133}{Fets\+::\+Fets()}} に渡す情報
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+comm} & モジュールとの通信に使用するハードウェアシリアルのポインタ \\
+\hline
+{\em \+\_\+id} & モジュールの\+ID 基底クラスにそのまま渡す ~\newline
+\\
+\hline
+{\em output\+Port} & 使用する出力ポートの番号 基底クラスにそのまま渡す ~\newline
+\\
+\hline
+{\em input\+Port} & 使用する入力ポートの番号 基底クラスにそのまま渡す ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+\+\_\+id , output\+Port , input\+Port について詳細は基底クラス \mbox{\hyperlink{class_fets_a912a4c4893341ede92aeeafb7085e133}{Fets\+::\+Fets()}} に記述してある 
+\end{DoxyRemark}
+
+
+Definition at line 9 of file Sakura\+\_\+modules.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_s___fets_a49f3c6af321bc95ee70c4fc115cbc3d0}\label{class_s___fets_a49f3c6af321bc95ee70c4fc115cbc3d0}} 
+\index{S\_Fets@{S\_Fets}!begin@{begin}}
+\index{begin@{begin}!S\_Fets@{S\_Fets}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily void S\+\_\+\+Fets\+::begin (\begin{DoxyParamCaption}\item[{int}]{baudrate = {\ttfamily 115200} }\end{DoxyParamCaption})}
+
+シリアル通信を開始する
+
+Serial\+\_\+.\+begin() と同義
+
+
+\begin{DoxyParams}{Parameters}
+{\em baudrate} & ボーレート\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+シリアルの実体でbeginしてもよい 
+\end{DoxyNote}
+\begin{DoxyAttention}{Attention}
+マルチスレーブ接続のため複数のモジュールで同一のシリアル通信バスを使用する場合，シリアルの実体でbeginしたほうがよい 
+\end{DoxyAttention}
+
+
+Definition at line 13 of file Sakura\+\_\+modules.\+cpp.
+
+\mbox{\Hypertarget{class_s___fets_a70035fecb2d8c2f0640f750836388f24}\label{class_s___fets_a70035fecb2d8c2f0640f750836388f24}} 
+\index{S\_Fets@{S\_Fets}!send@{send}}
+\index{send@{send}!S\_Fets@{S\_Fets}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily void S\+\_\+\+Fets\+::send (\begin{DoxyParamCaption}\item[{char}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+シリアル通信での送信メソッド ~\newline
+外部呼び出しはされない
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & 送信するデータ(1byte) \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_fets_aa43825a0f518c9acf77136458bdfb8dd}{Fets}}.
+
+
+
+Definition at line 17 of file Sakura\+\_\+modules.\+cpp.
+
+\mbox{\Hypertarget{class_s___fets_aee4f8650e3c7c0d9c76453d98114cf86}\label{class_s___fets_aee4f8650e3c7c0d9c76453d98114cf86}} 
+\index{S\_Fets@{S\_Fets}!recieve@{recieve}}
+\index{recieve@{recieve}!S\_Fets@{S\_Fets}}
+\doxysubsubsection{\texorpdfstring{recieve()}{recieve()}}
+{\footnotesize\ttfamily int S\+\_\+\+Fets\+::recieve (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+シリアル通信での受信メソッド ~\newline
+外部呼び出しはされない
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily -\/1} 新規データなし 
+
+{\ttfamily 0x00} $\sim$ {\ttfamily 0x\+FF} 受信したデータ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_fets_a8a4306a2853c6d0e5b792e9a6f3c8453}{Fets}}.
+
+
+
+Definition at line 22 of file Sakura\+\_\+modules.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_sakura__modules_8h}{Sakura\+\_\+modules.\+h}}\item 
+\mbox{\hyperlink{_sakura__modules_8cpp}{Sakura\+\_\+modules.\+cpp}}\end{DoxyCompactItemize}
