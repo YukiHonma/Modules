@@ -6,7 +6,7 @@ FETモジュールをSlaveに置く，Masterに使うライブラリ
  - 主機能の抽象クラス Fets
  - GR-SAKURA用の実装クラス S_Fets
 
- リポジトリ : https://github.com/YukiHonma/Master_Module-Sorenoid.git  
+ リポジトリ : https://github.com/YukiHonma/Modules.git
   
   
 ## ファイル構成
