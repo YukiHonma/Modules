@@ -1,6 +1,6 @@
 /**
  * @file Sakura_modules.cpp
- * @brief S_Fets クラスメンバの実装
+ * @brief GR-SAKURA 実装用クラス ( S_Fets , S_UnderBody ) メンバの実装
  */
 
 
@@ -16,9 +16,22 @@ void S_Fets::begin(int baudrate){
 
 void S_Fets::send(char data){
     comm->write(data);
-    return;
 }
 
 int S_Fets::recieve(){
     return comm->read();
+}
+
+
+
+S_UnderBody::S_UnderBody(HardwareSerial *_comm) : UnderBody(){
+    comm = _comm;
+}
+
+void S_UnderBody::begin(int baudrate){
+    comm->begin(baudrate);
+}
+
+void S_UnderBody::send(char data){
+    comm->write(data);
 }
