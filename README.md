@@ -1,5 +1,5 @@
 # Master using Modules library API
-TUT ProjectR
+
 
 ## 概要
 モジュールを使用するライブラリ
